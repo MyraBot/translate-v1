@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Translations - 404</title>
+
+        <link rel="stylesheet" href="/utilities.css" />
+        <link rel="stylesheet" href="/errors/errors.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>404</h1>
+            <p class="text">ok</p>
+        </div>
+
+        <script>
+            // prettier-ignore
+            window.addEventListener('load', function () {
+                const strings = ["I think you're wrong...",
+                "What you're doing here???",
+                "Typo?"
+                ];
+
+                const string = strings[Math.floor(Math.random() * strings.length)];
+                document.querySelector(".text").innerHTML = string;
+            }, false);
+        </script>
+    </body>
+</html>

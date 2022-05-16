@@ -1,0 +1,65 @@
+.container {
+  flex-direction: column;
+}
+
+.content {
+  justify-content: flex-start !important;
+  align-items: flex-start;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed; /* To be able to change the size of a cell */
+  border-spacing: 0; /* Remove border */
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: var(--secondary-colour);
+}
+
+th {
+  font-size: var(--font-size-insane);
+  font-weight: normal; /* Don't change font weight */
+}
+
+td {
+  font-size: var(--font-size-small);
+}
+
+td, th {
+  padding: 5px;
+  word-break: break-all;
+}
+
+.string:hover {
+    background-color: var(--primary-colour-light);
+}
+
+/* Make untranslated strings pop out */
+.string.untranslated {
+    background-color: #FF6962;
+}
+
+.string.untranslated:hover {
+    background-color: #ff7766;
+}
+
+
+tr {
+  cursor: pointer;
+}
+
+.small3 {
+  width: 20%;
+}
+
+.big3 {
+  width: 40%;
+}
+
+.small2 {
+  width: 25%;
+}
+
+.big2 {
+  width: 75%;
+}

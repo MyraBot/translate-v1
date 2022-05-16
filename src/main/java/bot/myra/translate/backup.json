@@ -1,0 +1,273 @@
+[
+  {
+    "id": "934523737733234758",
+    "application_id": "871694469974593627",
+    "version": "958081793133777007",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "info",
+    "description": "Find out usefull things about servers and users",
+    "dm_permission": null,
+    "options": [
+      {
+        "type": 1,
+        "name": "user",
+        "description": "Small description",
+        "options": [{"type": 6, "name": "user", "description": "User", "choices": []}]
+      },
+      {
+        "type": 1,
+        "name": "server",
+        "description": "Small description",
+        "options": [{"type": 3, "name": "id", "description": "Server id", "choices": []}]
+      }
+    ]
+  },
+  {
+    "id": "934747900876062730",
+    "application_id": "871694469974593627",
+    "version": "934747900926378037",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "daily",
+    "description": "Claim your daily reward",
+    "dm_permission": null,
+    "options": []
+  },
+  {
+    "id": "934747900876062731",
+    "application_id": "871694469974593627",
+    "version": "958081793133777008",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "blackjack",
+    "description": "Play a round of blackjack",
+    "dm_permission": null,
+    "options": [{"type": 4, "name": "bet", "description": "The amount of money you bet", "required": true, "choices": []}]
+  },
+  {
+    "id": "934747900876062732",
+    "application_id": "871694469974593627",
+    "version": "958081793133777009",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "balance",
+    "description": "Display the members balance",
+    "dm_permission": null,
+    "options": [{"type": 6, "name": "user", "description": "User", "choices": []}]
+  },
+  {
+    "id": "934747900876062733",
+    "application_id": "871694469974593627",
+    "version": "958081793133777010",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "help",
+    "description": "What is Myra?",
+    "dm_permission": null,
+    "options": []
+  },
+  {
+    "id": "934747900876062734",
+    "application_id": "871694469974593627",
+    "version": "958082909414256690",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "report",
+    "description": "Report bugs you discovered",
+    "dm_permission": null,
+    "options": [{"type": 3, "name": "bug", "description": "test", "required": true, "choices": []}]
+  },
+  {
+    "id": "934747900876062735",
+    "application_id": "871694469974593627",
+    "version": "958082909414256691",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "feature",
+    "description": "Make feature suggestions for Myra",
+    "dm_permission": null,
+    "options": [
+      {
+        "type": 3,
+        "name": "feature",
+        "description": "Description of the bug and how to reproduce",
+        "required": true,
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "934747900876062736",
+    "application_id": "871694469974593627",
+    "version": "958082909414256692",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "suggest",
+    "description": "Make a server suggestion",
+    "dm_permission": null,
+    "options": [
+      {"type": 3, "name": "suggestion", "description": "Describe your suggestion", "required": true, "choices": []}
+    ]
+  },
+  {
+    "id": "934747900876062737",
+    "application_id": "871694469974593627",
+    "version": "958082909414256693",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "rank",
+    "description": "Show a users rank",
+    "dm_permission": null,
+    "options": [{"type": 6, "name": "user", "description": "User", "choices": []}]
+  },
+  {
+    "id": "934747900876062738",
+    "application_id": "871694469974593627",
+    "version": "958082909414256694",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "buy",
+    "description": "Buy roles from the shop",
+    "dm_permission": null,
+    "options": []
+  },
+  {
+    "id": "934747900876062739",
+    "application_id": "871694469974593627",
+    "version": "958082909414256695",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "fish",
+    "description": "Catch a fucking fish",
+    "dm_permission": null,
+    "options": []
+  },
+  {
+    "id": "934747900926378034",
+    "application_id": "871694469974593627",
+    "version": "934747901039632407",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "time",
+    "description": "How much time did you spend flirting in voice calls....?",
+    "dm_permission": null,
+    "options": [
+      {
+        "type": 6,
+        "name": "member",
+        "description": "Most of the time here you explain in more detail what the option type is bruh",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "934747900926378035",
+    "application_id": "871694469974593627",
+    "version": "934747901039632408",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "calculate",
+    "description": "I can do math for ya, well kinda...",
+    "dm_permission": null,
+    "options": [
+      {
+        "type": 3,
+        "name": "calculation",
+        "description": "Most of the time here you explain in more detail what the option type is bruh",
+        "required": true,
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "934747900926378036",
+    "application_id": "871694469974593627",
+    "version": "934747901039632409",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "streak",
+    "description": "Check your current daily streak",
+    "dm_permission": null,
+    "options": [
+      {
+        "type": 9,
+        "name": "member",
+        "description": "Most of the time here you explain in more detail what the option type is bruh",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "942375294130585600",
+    "application_id": "871694469974593627",
+    "version": "958082909414256696",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "tempban",
+    "description": "Ban members... But temporary!",
+    "dm_permission": null,
+    "options": [
+      {"type": 6, "name": "member", "description": "Member to ban", "required": true, "choices": []},
+      {"type": 4, "name": "duration", "description": "Duration", "required": true, "choices": []},
+      {
+        "type": 3,
+        "name": "unit",
+        "description": "Time unit",
+        "required": true,
+        "choices": [
+          {"name": "seconds", "value": "string"},
+          {"name": "minutes", "value": "string"},
+          {"name": "hours", "value": "string"},
+          {"name": "days", "value": "string"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "944575831391494164",
+    "application_id": "871694469974593627",
+    "version": "958082909414256697",
+    "default_permission": true,
+    "default_member_permissions": null,
+    "type": 1,
+    "name": "suggestions",
+    "description": "I can do cool stuff",
+    "dm_permission": null,
+    "options": [
+      {
+        "type": 1,
+        "name": "accept",
+        "description": "Small description",
+        "options": [
+          {"type": 3, "name": "id", "description": "Message id of suggestion", "required": true, "choices": []},
+          {"type": 3, "name": "reason", "description": "Explain why you accepted the suggestion", "choices": []}
+        ]
+      },
+      {
+        "type": 1,
+        "name": "deny",
+        "description": "Small description",
+        "options": [
+          {"type": 3, "name": "id", "description": "Message id of suggestion", "required": true, "choices": []},
+          {"type": 3, "name": "reason", "description": "Explain why you denied the suggestion", "choices": []}
+        ]
+      }
+    ]
+  }
+]
