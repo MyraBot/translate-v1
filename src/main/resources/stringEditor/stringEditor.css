@@ -30,3 +30,22 @@
     font-size: var(--font-size-normal);
     color: var(--secondary-colour-dark);
 }
+
+.next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.next div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.next .info {
+    font-size: 10px;
+}
+.next div img {
+    width: 25px;
+    margin-left: 10px;
+    transform: rotate(180deg);
+}

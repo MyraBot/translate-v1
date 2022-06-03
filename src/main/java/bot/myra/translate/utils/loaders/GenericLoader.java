@@ -32,16 +32,13 @@ abstract public class GenericLoader {
     }
 
     public void update(String key, String value) {
-        final boolean translationExists = translations.stream().anyMatch(it -> it.key().equals(key));
-        if (translationExists) translations.removeIf(it -> it.key().equals(key));
         final Translation translation = iso.equals(Utilities.DEFAULT_LANGUAGE)
                 ? new Translation(key, value, value)
                 : new Translation(key, original.get(key), value);
 
         onUpdate(key, value);
         map.put(key, value);
-        translations.add(translation);
-
+        translations.stream().filter(it -> it.getKey().equals(key)).findFirst().get().setTranslatedText(value);
         Utilities.writeFile(platform.getPath(iso), toOriginalFormat());
     }
 

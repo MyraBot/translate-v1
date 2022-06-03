@@ -1,6 +1,7 @@
 package bot.myra.translate.pages.api;
 
 import bot.myra.translate.Database;
+import bot.myra.translate.Translation;
 import bot.myra.translate.utils.Platform;
 import bot.myra.translate.utils.Utilities;
 import bot.myra.translate.utils.loaders.GenericLoader;
@@ -34,9 +35,28 @@ public class SaveString {
         final Platform platform = Platform.get(json.getString("platform"));
         final GenericLoader loader = platform.getLoader(language);
         loader.update(key, translation);
-        System.out.println("Updated!");
 
-        return "{\"status\": \"Oki doki!\"}";
+        String nextKey = "null";
+        boolean foundCurrent = false;
+        for (int i = 0; i < loader.getTranslations().size(); i++) {
+            final Translation iTranslation = loader.getTranslations().get(i);
+            if (iTranslation.getKey().equals(key)) {
+                foundCurrent = true;
+                if (loader.getTranslations().size() - 1 == i) break;
+            } else if (foundCurrent && iTranslation.getTranslatedText().isBlank()) {
+                nextKey = iTranslation.getKey();
+                break;
+            }
+        }
+
+
+        return """
+                {
+                    "status": "Oki doki",
+                    "next": "{next}"
+                }
+                """
+                .replace("{next}", nextKey);
     }
 
 }

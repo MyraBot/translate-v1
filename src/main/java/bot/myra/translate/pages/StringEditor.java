@@ -24,12 +24,12 @@ public class StringEditor {
 
         final Platform platform = Platform.get(req.params("platform"));
         final GenericLoader loader = platform.getLoader(iso);
-        final Translation entry = loader.getTranslations().stream().filter(it -> it.key().equals(query)).findFirst().get();
+        final Translation entry = loader.getTranslations().stream().filter(it -> it.getKey().equals(query)).findFirst().get();
 
         return Utilities.readResource("stringEditor/stringEditor.html")
                 .replace("{$string.key}", query) // The key of the string
-                .replace("{$string.original}", entry.originalText())
-                .replace("{$string.translation}", entry.translatedText());
+                .replace("{$string.original}", entry.getOriginalText())
+                .replace("{$string.translation}", entry.getTranslatedText());
     }
 
 }

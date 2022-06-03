@@ -35,12 +35,12 @@ public class StringOverview {
         final StringBuilder stringsHtml = new StringBuilder();
         translations.getTranslations().forEach(translation -> {
             String stringHtml;
-            if (translation.translatedText().isEmpty()) stringHtml = Utilities.readResource("stringsOverview/language-string-untranslated.html");
+            if (translation.getTranslatedText().isEmpty()) stringHtml = Utilities.readResource("stringsOverview/language-string-untranslated.html");
             else stringHtml = Utilities.readResource("stringsOverview/language-string.html");
             stringHtml = stringHtml
-                    .replace("{$string.key}", translation.key())
-                    .replace("{$string.original}", translation.originalText())
-                    .replace("{$string.translation}", translation.translatedText());
+                    .replace("{$string.key}", translation.getKey())
+                    .replace("{$string.original}", translation.getOriginalText())
+                    .replace("{$string.translation}", translation.getTranslatedText());
             stringsHtml.append(stringHtml);
         });
 
