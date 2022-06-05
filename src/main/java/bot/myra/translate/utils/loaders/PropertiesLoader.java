@@ -59,6 +59,7 @@ public class PropertiesLoader extends GenericLoader {
                 map.put(string, null); // Put comment without value in the map
                 continue; // Skip rest of code
             }
+            if (!string.contains("=")) continue; // String is corrupted
 
             final String key = string.split("=", 0)[0]; // Get key of original language file
             final String value = string.length() == key.length() + "=".length() ? "" : string.split("=", 0)[1]; // Get original string
