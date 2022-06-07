@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     console.log("-----");
     translation.style.height = height + "px";
 
+    translation.focus();
+    translation.select();
+
     const isCommand = window.location.pathname.split("/")[2] === "commands"
     const isCommandName = key.split(".")[key.split(".").length - 1] === "name"
     // If user edits a command translation
