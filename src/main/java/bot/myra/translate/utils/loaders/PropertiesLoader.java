@@ -35,7 +35,7 @@ public class PropertiesLoader extends GenericLoader {
             super.translations = super.map
                     .entrySet()
                     .stream()
-                    .map(e -> new Translation(e.getKey(), e.getValue(), e.getValue()))
+                    .map(e -> new Translation(e.getKey(), e.getValue(), e.getValue(), e.getKey().startsWith("#")))
                     .toList();
         } else {
             final StringBuilder translationUpdated = new StringBuilder();
@@ -90,12 +90,12 @@ public class PropertiesLoader extends GenericLoader {
                     final Map.Entry<String, String> translation = matchingEntry.get();
 
                     translationUpdated.append(translation.getKey()).append("=").append(translation.getValue()).append("\n"); // Append key with translated value
-                    raw.add(new Translation(key, value, translation.getValue())); // Add translation
+                    raw.add(new Translation(key, value, translation.getValue(), value.startsWith("#"))); // Add translation
                 }
                 // Key doesn't exist yet
                 else {
                     translationUpdated.append(key).append("=\n"); // Append key with empty value
-                    raw.add(new Translation(key, value, "")); // Add translation with an empty translated string
+                    raw.add(new Translation(key, value, "", value.startsWith("#"))); // Add translation with an empty translated string
                 }
             }
         });

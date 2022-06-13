@@ -4,7 +4,10 @@ import bot.myra.translate.Translation;
 import bot.myra.translate.utils.Platform;
 import bot.myra.translate.utils.Utilities;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 abstract public class GenericLoader {
 
@@ -33,8 +36,8 @@ abstract public class GenericLoader {
 
     public void update(String key, String value) {
         final Translation translation = iso.equals(Utilities.DEFAULT_LANGUAGE)
-                ? new Translation(key, value, value)
-                : new Translation(key, original.get(key), value);
+                ? new Translation(key, value, value, false) // isComment = false because you can't edit comments
+                : new Translation(key, original.get(key), value, false);
 
         onUpdate(key, value);
         map.put(key, value);

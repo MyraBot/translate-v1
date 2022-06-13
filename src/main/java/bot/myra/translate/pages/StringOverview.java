@@ -9,6 +9,8 @@ import org.jetbrains.annotations.NotNull;
 import spark.Request;
 import spark.Response;
 
+import java.util.Arrays;
+
 public class StringOverview {
 
     public static Object onPageVisit(@NotNull Request req, Response res) {
@@ -58,10 +60,13 @@ public class StringOverview {
 
         final StringBuilder entriesHtml = new StringBuilder();
         final String entryTemplate = Utilities.readResource("stringsOverview/default-language-string.html");
-        loader.getMap().forEach((key, value) -> {
+
+        loader.getTranslations()
+                .stream().filter(translation -> !translation.isComment())
+                .forEach(translation ->  {
             final String entry = entryTemplate
-                    .replace("{$string.key}", key)
-                    .replace("{$string.value}", value);
+                    .replace("{$string.key}", translation.getKey())
+                    .replace("{$string.value}", translation.getOriginalText());
             entriesHtml.append(entry);
         });
 

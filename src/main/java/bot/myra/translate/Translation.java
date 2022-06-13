@@ -5,11 +5,13 @@ public class Translation {
     private final String key;
     private String originalText;
     private String translatedText;
+    private final boolean isComment;
 
-    public Translation(String key, String originalText, String translatedText) {
+    public Translation(String key, String originalText, String translatedText, boolean isComment) {
         this.key = key;
         this.originalText = originalText;
         this.translatedText = translatedText;
+        this.isComment = isComment;
     }
 
     public String getKey() {
@@ -29,4 +31,7 @@ public class Translation {
         return this;
     }
 
+    public boolean isComment() {
+        return isComment;
+    }
 }

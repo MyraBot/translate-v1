@@ -31,7 +31,7 @@ public class JsonLoader extends GenericLoader {
     @Override
     public void onUpdate(String encodedKey, String value) {
         final String[] objectsPath = encodedKey.split(":");
-        final String key = objectsPath[objectsPath.length -1];
+        final String key = objectsPath[objectsPath.length - 1];
         JSONObject currentObject = language;
         for (int i = 0; i < objectsPath.length - 1; i++) {
             currentObject = currentObject.getJSONObject(objectsPath[i]);
@@ -54,7 +54,7 @@ public class JsonLoader extends GenericLoader {
 
         final List<Translation> translations = new ArrayList<>();
         originalMapped.forEach((key, value) -> {
-            final Translation translation = new Translation(key, value, super.map.getOrDefault(key, ""));
+            final Translation translation = new Translation(key, value, super.map.getOrDefault(key, ""), false);
             translations.add(translation);
         });
         super.translations = translations;

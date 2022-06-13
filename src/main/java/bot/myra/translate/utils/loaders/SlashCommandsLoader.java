@@ -91,7 +91,7 @@ public class SlashCommandsLoader extends GenericLoader {
         final String original = json.getString(defaultKey);
         final String string = json.getJSONObject(key).has(iso) ? json.getJSONObject(key).getString(iso) : "";
 
-        final Translation translation = new Translation(identifier, original, string);
+        final Translation translation = new Translation(identifier, original, string, false);
         super.translations.add(translation);
     }
 

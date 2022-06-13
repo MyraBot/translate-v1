@@ -40,6 +40,8 @@ public class SaveString {
         boolean foundCurrent = false;
         for (int i = 0; i < loader.getTranslations().size(); i++) {
             final Translation iTranslation = loader.getTranslations().get(i);
+            if (iTranslation.isComment()) continue;
+
             if (iTranslation.getKey().equals(key)) {
                 foundCurrent = true;
                 if (loader.getTranslations().size() - 1 == i) break;
