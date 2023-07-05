@@ -2,9 +2,9 @@
 
 Translation website dashboard. This tool allows people to translate your files in their languages.
 
-<img src="editor-full.png.png" style="display: inline; width: 500px">
+<img src="editor-full.png" style="display: inline; width: 500px">
 
-<img src="editor_empty.png.png" style="display: inline; width: 500px">
+<img src="editor-empty.png" style="display: inline; width: 500px">
 
 <img src="overview.png" style="display: inline; width: 500px">
 
