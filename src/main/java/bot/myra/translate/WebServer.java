@@ -14,6 +14,7 @@ public class WebServer {
      * @param args Some useless arguments
      */
     public static void main(String[] args) {
+        Utilities.init();
         port(1515); // Set port to 1515
         staticFileLocation("/"); // Set the location for files
 

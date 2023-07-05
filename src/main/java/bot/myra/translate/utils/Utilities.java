@@ -12,14 +12,24 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
+import java.util.Properties;
 
 public class Utilities {
+    public static Properties config = new Properties();
+
     public static final String DEFAULT_LANGUAGE = "en-GB";
     public static final String CODE = "7YHTQNzmyC3fj8IcwJwj";
     public static final String LANGUAGE_PATH_LOCAL = "C:\\Users\\Marian\\Desktop\\Translations\\{$platform}\\{$language.isoCode}.properties";
     public static final String LANGUAGE_PATH_SERVER = "/root/translations/{$platform}/{$language.isoCode}.properties";
     public static String LANGUAGE_PATH = "./{$platform}/{$language.isoCode}.properties";
 
+    public static void init() {
+        try {
+            config.load(Utilities.class.getClassLoader().getResourceAsStream("config.properties"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     /**
      * Check if the user is logged in. If the login data is invalid, the user will get redirected to the login page.
