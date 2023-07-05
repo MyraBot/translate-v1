@@ -14,6 +14,7 @@ Translation website dashboard. This tool allows people to translate your files i
     * [Regular `.json` file](#regular-json-file)
     * [Commands `.json` file](#commands-json-file)
   * [🏳️ Language code](#-language-code)
+  * [📷 Screenshots](#-screenshots)
 <!-- TOC -->
 
 ## Features overview
@@ -84,7 +85,7 @@ them.
 I used the same language codes Discord is using. In their documentation there is no information on what they have based on
 their system, but I assume they used the [BCP 47](https://en.wikipedia.org/wiki/IETF_language_tag) system.
 
-## Screenshots
+## 📷 Screenshots
 
 <img src="img/overview.png">
 
