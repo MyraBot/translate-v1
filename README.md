@@ -61,16 +61,9 @@ crammed together in one file, grouped as json objects:
 
 ```json
 {
-  "en-GB": {
-    ...
-  },
-  "de": {
-    ...
-  },
-  "fr": {
-    ...
-  },
-  ...
+  "en-GB": {},
+  "de": {},
+  "fr": {}
 }
 ```
 
