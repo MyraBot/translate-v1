@@ -1,13 +1,15 @@
 # 🌍 Translate v1
 
-Translation website dashboard. This tool allows people to translate your files in their languages.
+Yes... This is a translation tool written in Java, using plain html/css/js :skull:
+
+![Warning](https://raw.githubusercontent.com/MyraBot/.github/main/code-advise.png)
 
 ## 📌 Table of contents
 
 <!-- TOC -->
 * [🌍 Translate v1](#-translate-v1)
   * [📌 Table of contents](#-table-of-contents)
-  * [Features overview](#features-overview)
+  * [📜 Features overview](#-features-overview)
   * [🗃️ Database setup](#-database-setup)
   * [📂 Supported file formats](#-supported-file-formats)
     * [`.properties` file](#properties-file)
@@ -17,7 +19,7 @@ Translation website dashboard. This tool allows people to translate your files i
   * [📷 Screenshots](#-screenshots)
 <!-- TOC -->
 
-## Features overview
+## 📜 Features overview
 
 * Support for multiple file formats
 * Manage multiple accounts
