@@ -6,18 +6,15 @@ Yes... This is a translation tool written in Java, using plain html/css/js :skul
 
 ## 📌 Table of contents
 
-<!-- TOC -->
-* [🌍 Translate v1](#-translate-v1)
-  * [📌 Table of contents](#-table-of-contents)
-  * [📜 Features overview](#-features-overview)
-  * [🗃️ Database setup](#-database-setup)
-  * [📂 Supported file formats](#-supported-file-formats)
-    * [`.properties` file](#properties-file)
-    * [Regular `.json` file](#regular-json-file)
-    * [Commands `.json` file](#commands-json-file)
-  * [🏳️ Language code](#-language-code)
-  * [📷 Screenshots](#-screenshots)
-<!-- TOC -->
+* [📌 Table of contents](#-table-of-contents)
+* [📜 Features overview](#-features-overview)
+* [🗃️ Database setup](#-database-setup)
+* [📂 Supported file formats](#-supported-file-formats)
+  * [`.properties` file](#properties-file)
+  * [Regular `.json` file](#regular-json-file)
+  * [Commands `.json` file](#commands-json-file)
+* [🏳️ Language code](#-language-code)
+* [📷 Screenshots](#-screenshots)
 
 ## 📜 Features overview
 
