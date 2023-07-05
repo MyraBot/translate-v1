@@ -2,12 +2,6 @@
 
 Translation website dashboard. This tool allows people to translate your files in their languages.
 
-<img src="editor-empty.png">
-
-<img src="overview.png">
-
-<img src="editor-full.png">
-
 ## 📌 Table of contents
 
 <!-- TOC -->
@@ -89,3 +83,11 @@ them.
 
 I used the same language codes Discord is using. In their documentation there is no information on what they have based on
 their system, but I assume they used the [BCP 47](https://en.wikipedia.org/wiki/IETF_language_tag) system.
+
+## Screenshots
+
+<img src="img/overview.png">
+
+<img src="img/editor-empty.png">
+
+<img src="img/editor-full.png">
