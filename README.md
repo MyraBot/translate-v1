@@ -2,11 +2,11 @@
 
 Translation website dashboard. This tool allows people to translate your files in their languages.
 
-<img src="editor-full.png" style="display: inline; width: 50%; margin: 0;">
+<img src="editor-empty.png">
 
-<img src="editor-empty.png" style="display: inline; width: 50%; margin: 0;">
+<img src="overview.png">
 
-<img src="overview.png" style="display: inline; width: 500px">
+<img src="editor-full.png">
 
 ## 📌 Table of contents
 
@@ -42,7 +42,8 @@ document represents a user in the following scheme:
 
 The dashboard has no way of setting those users up. You would need to create the documents manually.
 
-Connect your own database, by putting your credentials in `./src/main/resources/config.properties` 
+Connect your own database, by putting your credentials in `./src/main/resources/config.properties`
+
 ```properties
 mongoConnectionString=mongodb://localhost
 databaseName=Translate
